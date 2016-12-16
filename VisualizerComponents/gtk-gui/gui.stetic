@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Debug/VisualizerComponents.dll" internal="true" />
+  </import>
+  <widget class="Gtk.Bin" id="VisualizerComponents.MemoryItemWidget" design-size="300 300">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.Frame" id="Frame">
+        <property name="MemberName" />
+        <child>
+          <widget class="Gtk.Alignment" id="GtkAlignment">
+            <property name="MemberName" />
+            <property name="Xalign">0</property>
+            <property name="Yalign">0</property>
+            <child>
+              <widget class="Gtk.VBox" id="VBox">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.Label" id="Label">
+                    <property name="MemberName" />
+                    <property name="LabelProp">MemoryItemWidget</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.Entry" id="Entry">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="IsEditable">True</property>
+                    <property name="InvisibleChar">●</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">1</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
+                </child>
+              </widget>
+            </child>
+          </widget>
+        </child>
+        <child>
+          <widget class="Gtk.Label" id="GtkLabel">
+            <property name="MemberName" />
+            <property name="UseMarkup">True</property>
+          </widget>
+          <packing>
+            <property name="type">label_item</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="VisualizerComponents.MemoryVisualizerContainer" design-size="300 300">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="VisualizerComponents.MemoryVisualizerContainer" design-size="300 300">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.Fixed" id="FixedContainer">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="VisualizerComponents.WireWidget" design-size="50 50">
+    <property name="MemberName" />
+    <property name="WidthRequest">50</property>
+    <property name="HeightRequest">50</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.EventBox" id="eventbox2">
+        <property name="MemberName" />
+        <child>
+          <placeholder />
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="VisualizerComponents.HWireWidget" design-size="100 3">
+    <property name="MemberName" />
+    <property name="WidthRequest">100</property>
+    <property name="HeightRequest">3</property>
+    <property name="Visible">False</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+  <widget class="Gtk.Bin" id="VisualizerComponents.VWireWidget" design-size="3 100">
+    <property name="MemberName" />
+    <property name="WidthRequest">3</property>
+    <property name="HeightRequest">100</property>
+    <property name="Visible">False</property>
+    <child>
+      <placeholder />
+    </child>
+  </widget>
+</stetic-interface>

@@ -1,0 +1,54 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryVisualizer", "MemoryVisualizer\MemoryVisualizer.csproj", "{EA36756C-42FA-4A52-ACF6-AE8A5D1518BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisualizerComponents", "VisualizerComponents\VisualizerComponents.csproj", "{3CE018D9-0C39-4341-B570-FF7D9C418CEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyVisualizer", "DummyVisualizer\DummyVisualizer.csproj", "{CED8D513-D34B-44FD-AA53-E0A0DDAD812F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectMappedCacheVisualizer", "DirectMappedCacheVisualizer\DirectMappedCacheVisualizer.csproj", "{87D8AECE-3F7D-4314-B514-B8BE6B12869E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackVisualizer", "StackVisualizer\StackVisualizer.csproj", "{6CC946DE-E9C1-49FE-A7D7-F7E56534D6E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagedVirtualMemoryVisualizer", "PagedVirtualMemoryVisualizer\PagedVirtualMemoryVisualizer.csproj", "{4008895D-10B5-4CCC-A8A8-855E38D55DA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA36756C-42FA-4A52-ACF6-AE8A5D1518BB}.Debug|x86.ActiveCfg = Debug|x86
+		{EA36756C-42FA-4A52-ACF6-AE8A5D1518BB}.Debug|x86.Build.0 = Debug|x86
+		{EA36756C-42FA-4A52-ACF6-AE8A5D1518BB}.Release|x86.ActiveCfg = Release|x86
+		{EA36756C-42FA-4A52-ACF6-AE8A5D1518BB}.Release|x86.Build.0 = Release|x86
+		{3CE018D9-0C39-4341-B570-FF7D9C418CEE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3CE018D9-0C39-4341-B570-FF7D9C418CEE}.Debug|x86.Build.0 = Debug|Any CPU
+		{3CE018D9-0C39-4341-B570-FF7D9C418CEE}.Release|x86.ActiveCfg = Release|Any CPU
+		{3CE018D9-0C39-4341-B570-FF7D9C418CEE}.Release|x86.Build.0 = Release|Any CPU
+		{CED8D513-D34B-44FD-AA53-E0A0DDAD812F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CED8D513-D34B-44FD-AA53-E0A0DDAD812F}.Debug|x86.Build.0 = Debug|Any CPU
+		{CED8D513-D34B-44FD-AA53-E0A0DDAD812F}.Release|x86.ActiveCfg = Release|Any CPU
+		{CED8D513-D34B-44FD-AA53-E0A0DDAD812F}.Release|x86.Build.0 = Release|Any CPU
+		{87D8AECE-3F7D-4314-B514-B8BE6B12869E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{87D8AECE-3F7D-4314-B514-B8BE6B12869E}.Debug|x86.Build.0 = Debug|Any CPU
+		{87D8AECE-3F7D-4314-B514-B8BE6B12869E}.Release|x86.ActiveCfg = Release|Any CPU
+		{87D8AECE-3F7D-4314-B514-B8BE6B12869E}.Release|x86.Build.0 = Release|Any CPU
+		{6CC946DE-E9C1-49FE-A7D7-F7E56534D6E0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CC946DE-E9C1-49FE-A7D7-F7E56534D6E0}.Debug|x86.Build.0 = Debug|Any CPU
+		{6CC946DE-E9C1-49FE-A7D7-F7E56534D6E0}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CC946DE-E9C1-49FE-A7D7-F7E56534D6E0}.Release|x86.Build.0 = Release|Any CPU
+		{4008895D-10B5-4CCC-A8A8-855E38D55DA0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4008895D-10B5-4CCC-A8A8-855E38D55DA0}.Debug|x86.Build.0 = Debug|Any CPU
+		{4008895D-10B5-4CCC-A8A8-855E38D55DA0}.Release|x86.ActiveCfg = Release|Any CPU
+		{4008895D-10B5-4CCC-A8A8-855E38D55DA0}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$1.ResourceNamePolicy = MSBuild
+		outputpath = MemoryVisualizer\bin\$(Configuration)\Visualizers
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="../../VisualizerComponents/bin/Debug/VisualizerComponents.dll" />
+    <widget-library name="../../MemoryVisualizer/bin/Debug/Visualizers/DummyVisualizer.dll" internal="true" />
+  </import>
+  <widget class="Gtk.Bin" id="DummyVisualizer.DummyVisualizer" design-size="703 374">
+    <property name="MemberName" />
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed4">
+        <property name="MemberName" />
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="VisualizerComponents.MemoryItemWidget" id="addr_step1_memoryitemwidget">
+            <property name="MemberName" />
+            <property name="Events">ButtonPressMask</property>
+            <property name="LabelText">Step 1</property>
+            <property name="DataTextUserEditable">False</property>
+          </widget>
+          <packing>
+            <property name="X">279</property>
+            <property name="Y">32</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.MemoryItemWidget" id="putWhere_step1_memoryitemwidget">
+            <property name="MemberName" />
+            <property name="Events">ButtonPressMask</property>
+            <property name="LabelText">Step 1</property>
+            <property name="DataTextUserEditable">False</property>
+          </widget>
+          <packing>
+            <property name="X">279</property>
+            <property name="Y">103</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.MemoryItemWidget" id="addr_step2_memoryitemwidget">
+            <property name="MemberName" />
+            <property name="Events">ButtonPressMask</property>
+            <property name="LabelText">Step 2</property>
+            <property name="DataTextUserEditable">False</property>
+          </widget>
+          <packing>
+            <property name="X">503</property>
+            <property name="Y">33</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.MemoryItemWidget" id="putWhere_step2_memoryitemwidget">
+            <property name="MemberName" />
+            <property name="Events">ButtonPressMask</property>
+            <property name="LabelText">Step 2</property>
+            <property name="DataTextUserEditable">False</property>
+          </widget>
+          <packing>
+            <property name="X">505</property>
+            <property name="Y">107</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.MemoryItemWidget" id="addr_init_memoryitemwidget">
+            <property name="MemberName" />
+            <property name="Events">ButtonPressMask</property>
+            <property name="LabelText">Address</property>
+            <property name="DataTextUserEditable">False</property>
+          </widget>
+          <packing>
+            <property name="X">12</property>
+            <property name="Y">40</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.MemoryItemWidget" id="putWhere_value_memoryitemwidget">
+            <property name="MemberName" />
+            <property name="Events">ButtonPressMask</property>
+            <property name="LabelText" />
+            <property name="DataTextUserEditable">False</property>
+          </widget>
+          <packing>
+            <property name="X">11</property>
+            <property name="Y">120</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.VWireWidget" id="vwirewidget2">
+            <property name="MemberName" />
+            <property name="WidthRequest">3</property>
+            <property name="HeightRequest">100</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step-1</property>
+          </widget>
+          <packing>
+            <property name="X">79</property>
+            <property name="Y">189</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.HWireWidget" id="hwirewidget2">
+            <property name="MemberName" />
+            <property name="WidthRequest">100</property>
+            <property name="HeightRequest">3</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step-1</property>
+          </widget>
+          <packing>
+            <property name="X">79</property>
+            <property name="Y">289</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.MemoryItemWidget" id="read_write_memoryitemwidget">
+            <property name="MemberName" />
+            <property name="Events">ButtonPressMask</property>
+            <property name="LabelText">Read/Write</property>
+            <property name="DataTextUserEditable">False</property>
+          </widget>
+          <packing>
+            <property name="X">184</property>
+            <property name="Y">253</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.HWireWidget" id="hwirewidget4">
+            <property name="MemberName" />
+            <property name="WidthRequest">50</property>
+            <property name="HeightRequest">3</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step1</property>
+          </widget>
+          <packing>
+            <property name="X">449</property>
+            <property name="Y">70</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.HWireWidget" id="hwirewidget3">
+            <property name="MemberName" />
+            <property name="WidthRequest">93</property>
+            <property name="HeightRequest">3</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step0</property>
+          </widget>
+          <packing>
+            <property name="X">181</property>
+            <property name="Y">147</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.HWireWidget" id="hwirewidget1">
+            <property name="MemberName" />
+            <property name="WidthRequest">88</property>
+            <property name="HeightRequest">3</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step0</property>
+          </widget>
+          <packing>
+            <property name="X">184</property>
+            <property name="Y">73</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.VWireWidget" id="vwirewidget1">
+            <property name="MemberName" />
+            <property name="WidthRequest">3</property>
+            <property name="HeightRequest">100</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step1</property>
+          </widget>
+          <packing>
+            <property name="X">372</property>
+            <property name="Y">170</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.HWireWidget" id="hwirewidget5">
+            <property name="MemberName" />
+            <property name="WidthRequest">100</property>
+            <property name="HeightRequest">3</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step1</property>
+          </widget>
+          <packing>
+            <property name="X">370</property>
+            <property name="Y">267</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.VWireWidget" id="vwirewidget3">
+            <property name="MemberName" />
+            <property name="WidthRequest">3</property>
+            <property name="HeightRequest">25</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step1</property>
+          </widget>
+          <packing>
+            <property name="X">467</property>
+            <property name="Y">244</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.VWireWidget" id="vwirewidget4">
+            <property name="MemberName" />
+            <property name="WidthRequest">3</property>
+            <property name="HeightRequest">25</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step1</property>
+          </widget>
+          <packing>
+            <property name="X">492</property>
+            <property name="Y">245</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.HWireWidget" id="hwirewidget6">
+            <property name="MemberName" />
+            <property name="WidthRequest">26</property>
+            <property name="HeightRequest">3</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step1</property>
+          </widget>
+          <packing>
+            <property name="X">468</property>
+            <property name="Y">244</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.HWireWidget" id="hwirewidget7">
+            <property name="MemberName" />
+            <property name="WidthRequest">96</property>
+            <property name="HeightRequest">3</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step1</property>
+          </widget>
+          <packing>
+            <property name="X">493</property>
+            <property name="Y">268</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="VisualizerComponents.VWireWidget" id="vwirewidget5">
+            <property name="MemberName" />
+            <property name="WidthRequest">3</property>
+            <property name="HeightRequest">94</property>
+            <property name="Events">ButtonPressMask</property>
+            <property name="Identifier">step1</property>
+          </widget>
+          <packing>
+            <property name="X">588</property>
+            <property name="Y">177</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

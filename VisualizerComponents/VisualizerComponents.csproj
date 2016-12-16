@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CE018D9-0C39-4341-B570-FF7D9C418CEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>VisualizerComponents</RootNamespace>
+    <AssemblyName>VisualizerComponents</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="Mono.Posix" />
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="System.ComponentModel.Composition" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="MemoryItemWidget.cs" />
+    <Compile Include="gtk-gui\VisualizerComponents.MemoryItemWidget.cs" />
+    <Compile Include="MemoryVisualizerContainer.cs" />
+    <Compile Include="gtk-gui\VisualizerComponents.MemoryVisualizerContainer.cs" />
+    <Compile Include="VisualizerStyle.cs" />
+    <Compile Include="WireWidget.cs" />
+    <Compile Include="gtk-gui\VisualizerComponents.WireWidget.cs" />
+    <Compile Include="HWireWidget.cs" />
+    <Compile Include="gtk-gui\VisualizerComponents.HWireWidget.cs" />
+    <Compile Include="VWireWidget.cs" />
+    <Compile Include="gtk-gui\VisualizerComponents.VWireWidget.cs" />
+    <Compile Include="CommandLine\CommandLineMarshal.cs" />
+    <Compile Include="CommandLine\CommandResult.cs" />
+    <Compile Include="VisualizerException.cs" />
+    <Compile Include="CommandLine\ArgumentParser.cs" />
+    <Compile Include="VisualizerComposer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CommandLine\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
